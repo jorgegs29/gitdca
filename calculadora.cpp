@@ -28,7 +28,7 @@ float potencia(float base, int exponente) {
 int main() {
     float x, y, resultado;
     char op;
-    int valido = 0;
+    int valido = 1;
 
     printf("Ingrese operacion (+) (-) (*) (/) (^): ");
     scanf("%c", &op);
