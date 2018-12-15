@@ -16,12 +16,21 @@ float division(float x, float y) {
 	return x / y;
 }
 
+float potencia(float base, int exponente) {
+    float resultado = 1;
+    int i;
+    for (i = 0; i < exponente; ++i) {
+        resultado *= base;
+    }
+    return resultado;
+}
+
 int main() {
     float x, y, resultado;
     char op;
     int valido = 0;
 
-    printf("Ingrese operacion (+) (-) (*) (/): ");
+    printf("Ingrese operacion (+) (-) (*) (/) (^): ");
     scanf("%c", &op);
     printf("Ingrese x: ");
     scanf("%f", &x);
@@ -41,6 +50,9 @@ int main() {
             break;
         case '/':
             resultado = division(x,y);
+            break;
+        case '^':
+            resultado = potencia(x, (int) y);
             break;
         default:
             valido = 0;
