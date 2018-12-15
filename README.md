@@ -33,6 +33,8 @@ inicial y ahora si, arreglar el fallo.
 
 
 ### Git Hooks
-Lo primero es consultar los hooks samples en mi caso voy a utilizar pre-commit hook sample. Y para ello tenemos que cambiar el nombre quitando el sufijo sample y darle permisos con el comando `chmod +x pre-commit´
+Lo primero es consultar los hooks samples en mi caso voy a utilizar pre-commit hook sample. Y para ello tenemos que cambiar el nombre quitando el sufijo sample y darle permisos con el comando `chmod +x pre-commit´.
+En la siguiente imagen se puede ver como el hook ha funcionado.
 
+![githook](https://github.com/jorgegs29/gitdca/blob/master/githook.PNG)
 
