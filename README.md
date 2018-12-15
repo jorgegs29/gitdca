@@ -22,4 +22,14 @@ Y una vez dentro metemos tantos alias como queramos.
 * alias gd='git diff'
 * alias go='git checkout'
 
+### Git bisect
+En las imagenes que se puden ver a continuación se explica como he utilizado git bisect para encontrar el fallo
+en el software.
+Una vez que hemos encontrado el fallo solo tendremos que hacer `git bisect reset` para volver al estado 
+inicial y ahora si, arreglar el fallo.
+
+![gitbisect](https://github.com/jorgegs29/gitdca/blob/master/gitbisect.PNG)
+![gitdiff](https://github.com/jorgegs29/gitdca/blob/master/gitdiff.PNG)
+
+
 
