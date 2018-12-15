@@ -12,12 +12,16 @@ float multiplicacion(float x, float y) {
 	return x * y;
 }
 
+float division(float x, float y) {
+	return x / y;
+}
+
 int main() {
     float x, y, resultado;
     char op;
-    int valido = 1;
+    int valido = 0;
 
-    printf("Ingrese operacion (+) (-) (*): ");
+    printf("Ingrese operacion (+) (-) (*) (/): ");
     scanf("%c", &op);
     printf("Ingrese x: ");
     scanf("%f", &x);
@@ -34,6 +38,9 @@ int main() {
         case '*':
         case 'x':
             resultado = multiplicacion(x,y);
+            break;
+        case '/':
+            resultado = division(x,y);
             break;
         default:
             valido = 0;
